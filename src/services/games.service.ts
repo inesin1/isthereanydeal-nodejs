@@ -12,11 +12,11 @@ import type {
 	PriceOverview,
 	PricesResponse,
 } from '../schemas/responses/games.schema'
-import { BaseService } from './_base.service'
+import { type ApiKeyTransport, BaseService } from './_base.service'
 
 export class GamesService extends BaseService {
-	constructor(apiKey: string) {
-		super(apiKey, 'games')
+	constructor(apiKey: string, apiKeyTransport: ApiKeyTransport = 'header') {
+		super(apiKey, 'games', apiKeyTransport)
 	}
 
 	/**
