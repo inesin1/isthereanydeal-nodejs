@@ -1,5 +1,6 @@
+import type { ApiKeyTransport } from '../client.types'
 import type { Giveaway } from '../schemas/responses/giveaways.schema'
-import { type ApiKeyTransport, BaseService } from './_base.service'
+import { BaseService } from './_base.service'
 
 export interface GiveawayListOptions {
 	offset?: number

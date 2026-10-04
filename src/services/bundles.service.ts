@@ -1,5 +1,6 @@
+import type { ApiKeyTransport } from '../client.types'
 import type { Bundle } from '../schemas/responses/common.schema'
-import { type ApiKeyTransport, BaseService } from './_base.service'
+import { BaseService } from './_base.service'
 
 export interface BundleListOptions {
 	country?: string

@@ -1,5 +1,6 @@
+import type { ApiKeyTransport } from '../client.types'
 import type { WaitlistGame, WaitlistStatsResponse } from '../schemas'
-import { type ApiKeyTransport, BaseService } from './_base.service'
+import { BaseService } from './_base.service'
 
 export class StatsService extends BaseService {
 	constructor(apiKey: string, apiKeyTransport: ApiKeyTransport = 'header') {

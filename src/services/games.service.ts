@@ -1,3 +1,4 @@
+import type { ApiKeyTransport } from '../client.types'
 import type {
 	Bundle,
 	Game,
@@ -12,7 +13,7 @@ import type {
 	PriceOverview,
 	PricesResponse,
 } from '../schemas/responses/games.schema'
-import { type ApiKeyTransport, BaseService } from './_base.service'
+import { BaseService } from './_base.service'
 
 export class GamesService extends BaseService {
 	constructor(apiKey: string, apiKeyTransport: ApiKeyTransport = 'header') {

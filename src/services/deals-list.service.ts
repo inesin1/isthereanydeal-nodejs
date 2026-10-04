@@ -1,9 +1,10 @@
+import type { ApiKeyTransport } from '../client.types'
 import type {
 	DealsList,
 	DealsListOptions,
 	DealsListPostOptions,
 } from '../schemas/responses/deals-list.schema'
-import { type ApiKeyTransport, BaseService } from './_base.service'
+import { BaseService } from './_base.service'
 
 export class DealsListService extends BaseService {
 	constructor(apiKey: string, apiKeyTransport: ApiKeyTransport = 'header') {

@@ -1,4 +1,4 @@
-import type { ApiKeyTransport } from './services/_base.service'
+import type { IsThereAnyDealClientOptions } from './client.types'
 import { BundlesService } from './services/bundles.service'
 import { DealsListService } from './services/deals-list.service'
 import { GamesService } from './services/games.service'
@@ -7,11 +7,10 @@ import { LookupService } from './services/lookup.service'
 import { ShopsService } from './services/shops.service'
 import { StatsService } from './services/stats.service'
 
-export type { ApiKeyTransport } from './services/_base.service'
-
-export interface IsThereAnyDealClientOptions {
-	apiKeyTransport?: ApiKeyTransport
-}
+export type {
+	ApiKeyTransport,
+	IsThereAnyDealClientOptions,
+} from './client.types'
 
 export class IsThereAnyDealClient {
 	protected _apiKey: string

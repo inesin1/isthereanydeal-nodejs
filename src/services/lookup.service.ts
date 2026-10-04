@@ -1,9 +1,10 @@
+import type { ApiKeyTransport } from '../client.types'
 import type {
 	LookupGamesByShopIdsResponse,
 	LookupGamesByTitlesResponse,
 	LookupShopIdsByGameIdsResponse,
 } from '../schemas/responses/lookup.schema'
-import { type ApiKeyTransport, BaseService } from './_base.service'
+import { BaseService } from './_base.service'
 
 export class LookupService extends BaseService {
 	constructor(apiKey: string, apiKeyTransport: ApiKeyTransport = 'header') {

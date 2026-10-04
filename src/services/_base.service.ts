@@ -1,4 +1,4 @@
-export type ApiKeyTransport = 'header' | 'query'
+import type { ApiKeyTransport } from '../client.types'
 
 export abstract class BaseService {
 	private readonly _apiKey: string
